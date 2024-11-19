@@ -1,112 +1,149 @@
+
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ORIGI.UZ - Original Sneakers</title>
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '844557534554540');
-    fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none" 
-        src="https://www.facebook.com/tr?id=844557534554540&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Meta Pixel Code -->
     <style>
         body {
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+            background-color: #ece5da; /* Светло-бежевый фон */
+            background-image: url('https://www.transparenttextures.com/patterns/linen-white.png'); /* Шершавый фон */
+            text-align: center;
             display: flex;
             flex-direction: column;
+            justify-content: flex-start; /* Изображение вверху */
             align-items: center;
-            justify-content: center;
             min-height: 100vh;
-            text-align: center;
-            color: #333;
         }
-        .background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://via.placeholder.com/1080x1920?text=Sneakers+Background') center/cover no-repeat;
-            z-index: -1;
-            filter: brightness(0.7);
+
+        .image-container {
+            margin-top: 20px;
         }
-        .logo {
-            width: 120px;
-            height: 120px;
-            background-color: black;
-            border-radius: 50%;
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .content {
+            flex: 1; /* Расширяем блок контента */
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: center; /* Центрирование по вертикали */
+            align-items: center; /* Центрирование по горизонтали */
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #555;
             margin-bottom: 20px;
         }
-        .logo span {
-            font-size: 48px;
-            font-weight: bold;
-            color: white;
-        }
-        h1 {
-            font-size: 36px;
-            margin: 0;
-        }
-        h2 {
-            font-size: 18px;
-            margin: 10px 0 30px 0;
-            font-weight: normal;
-            color: #666;
-        }
+
         .button {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 30px;
+            display: block;
+            margin: 10px auto;
+            padding: 15px 25px;
             font-size: 16px;
-            color: #333;
-            background-color: transparent;
-            border: 2px solid #333;
-            border-radius: 5px;
-            text-decoration: none;
             font-weight: bold;
-            cursor: pointer;
-            text-transform: uppercase;
+            color: black;
+            text-decoration: none;
+            border: 2px solid black;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
         }
+
         .button:hover {
-            background-color: #333;
+            background-color: #000033; /* Очень темно-синий цвет при наведении */
             color: white;
         }
+
         .footer {
-            margin-top: 30px;
             font-size: 14px;
-            color: #666;
+            color: #999;
+            margin-top: 10px; /* Уменьшенный отступ сверху */
+            text-align: center;
+        }
+
+        .footer a {
+            color: #999;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 10px;
+            }
+            .title {
+                font-size: 20px;
+            }
+            .subtitle {
+                font-size: 16px;
+            }
+            .button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+            .image-container img {
+                width: 100%; /* Масштабирование изображения для мобильных устройств */
+            }
         }
     </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)}; 
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '370123766128287');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=370123766128287&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 <body>
-    <div class="background"></div>
-    <div class="logo">
-        <span>R</span>
+    <!-- Блок с изображением -->
+     <div class="image-container">
+        <img src="????" alt="Sneakers">
     </div>
-    <h1>ORIGI.UZ</h1>
-    <h2>Original Sneakers</h2>
-    <a href="https://t.me/origi_uz" class="button" onclick="fbq('track', 'Lead')">Перейти в магазин</a>
-    <a href="https://t.me/origi_uz" class="button" onclick="fbq('track', 'Lead')">Do'konga boring</a>
-    <div class="footer">
-        <p>Contact me</p>
-        <p>✉️ 📍 🌐</p>
+    <!-- Основной контент -->
+    <div class="content">
+        <div class="title">ORIGI.UZ</div>
+        <div class="subtitle">Original Sneakers</div>
+
+        <a href="https://t.me/origi_uz" class="button">ПЕРЕЙТИ В МАГАЗИН</a>
+        <a href="https://t.me/origi_uz" class="button">DO'KONGA BORING</a>
+<!-- Футер -->
+        <div class="footer">
+            Contact me: 
+            <a href="mailto:dellvvlad@gmail.com">dellvvlad@gmail.com</a> | 
+            <a href="tel:+998900517615">+998 90 051 76 15</a>
+        </div>
     </div>
+
+    <script>
+        fbq('track', 'Lead');
+    </script>
 </body>
 </html>
